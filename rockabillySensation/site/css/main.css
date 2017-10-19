@@ -1,0 +1,32 @@
+.container {
+  font-size: 0; }
+
+header {
+  background-color: #DE292B;
+  height: 11vh; }
+
+.song {
+  background-color: #AC292B;
+  height: 11vh;
+  position: fixed;
+  right: 0;
+  width: 33vw; }
+
+audio {
+  display: inline-block;
+  margin: auto; }
+
+.brenna {
+  display: inline-block;
+  margin: 8vh 0;
+  vertical-align: top;
+  width: 33vw; }
+
+section {
+  display: inline-block;
+  background-color: #c4c4c4;
+  font-size: 15px;
+  height: 400px;
+  margin: 11vh 8.15833vw;
+  width: 16.49167vw;
+  vertical-align: top; }

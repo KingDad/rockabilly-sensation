@@ -1,0 +1,36 @@
+$light: #c4c4c4;
+$dark: #DE292B;
+$darker: #AC292B;
+.container{
+	font-size: 0;
+}
+header{
+	background-color: $dark;
+	height: 11vh;
+}
+.song{
+	background-color: $darker;
+	height: 11vh;
+	position: fixed;
+	right: 0;
+	width: 33vw;
+}
+audio{
+	display: inline-block;
+	margin: auto;
+}
+.brenna{
+	display: inline-block;
+	margin: 8vh 0;
+	vertical-align: top;
+	width: 33vw;
+}
+section{
+	display: inline-block;
+	background-color: $light;
+	font-size: 15px;
+	height: 400px;
+	margin: 11vh (1/12*100)-0.175vw;
+	width: (2/12*100)-0.175vw;
+	vertical-align: top;
+}
