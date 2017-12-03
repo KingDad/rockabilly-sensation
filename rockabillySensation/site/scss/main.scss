@@ -27,10 +27,12 @@ audio{
 }
 section{
 	display: inline-block;
-	background-color: $light;
-	font-size: 15px;
-	height: 400px;
-	margin: 11vh (1/12*100)-0.175vw;
-	width: (2/12*100)-0.175vw;
+	margin: 11vh (1/12*100)-0.17vw;
 	vertical-align: top;
+	width: (2/12*100)-0.175vw;
+	div{
+		background-color: $light;
+		font-size: 16px;
+
+	}
 }

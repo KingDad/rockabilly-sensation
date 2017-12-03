@@ -24,9 +24,9 @@ audio {
 
 section {
   display: inline-block;
-  background-color: #c4c4c4;
-  font-size: 15px;
-  height: 400px;
-  margin: 11vh 8.15833vw;
-  width: 16.49167vw;
-  vertical-align: top; }
+  margin: 11vh 8.16333vw;
+  vertical-align: top;
+  width: 16.49167vw; }
+  section div {
+    background-color: #c4c4c4;
+    font-size: 16px; }
