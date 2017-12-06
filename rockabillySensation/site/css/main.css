@@ -4,6 +4,13 @@
 header {
   background-color: #DE292B;
   height: 11vh; }
+  header h1 {
+    display: inline-block;
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin: 25px;
+    padding: 0; }
 
 .song {
   background-color: #AC292B;
@@ -11,22 +18,33 @@ header {
   position: fixed;
   right: 0;
   width: 33vw; }
-
-audio {
-  display: inline-block;
-  margin: auto; }
+  .song audio {
+    display: inline-block;
+    margin: 5.5% 40px; }
 
 .brenna {
+  border-radius: 2000px;
   display: inline-block;
-  margin: 8vh 0;
+  margin: 8vh 8.3vw;
   vertical-align: top;
   width: 33vw; }
 
 section {
+  background-color: #c4c4c4;
   display: inline-block;
-  margin: 11vh 8.16333vw;
+  height: 100%;
   vertical-align: top;
-  width: 16.49167vw; }
+  width: 25vw; }
   section div {
-    background-color: #c4c4c4;
-    font-size: 16px; }
+    font-size: 16px;
+    min-height: 100px;
+    margin: 30px; }
+    section div h3, section div p {
+      display: inline-block;
+      margin: 10px; }
+    section div h3 {
+      font-family: 'Bangers', cursive;
+      font-size: 25px; }
+    section div img {
+      margin: 12%;
+      width: 75%; }
