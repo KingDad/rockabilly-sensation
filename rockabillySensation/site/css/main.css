@@ -1,50 +1,87 @@
+body {
+  overflow-x: hidden; }
+
 .container {
   font-size: 0; }
 
 header {
   background-color: #DE292B;
-  height: 11vh; }
+  height: 11vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1; }
   header h1 {
     display: inline-block;
     font-family: 'Bangers', cursive;
     font-size: 50px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     margin: 25px;
     padding: 0; }
 
 .song {
   background-color: #AC292B;
   height: 11vh;
-  position: fixed;
+  position: absolute;
   right: 0;
   width: 33vw; }
   .song audio {
     display: inline-block;
     margin: 5.5% 40px; }
 
-.brenna {
+.top video {
+  position: absolute;
+  left: 0vw;
+  width: 100vw;
+  z-index: -1; }
+
+.top #brenna {
   border-radius: 2000px;
   display: inline-block;
-  margin: 8vh 8.3vw;
+  height: 33vw;
+  margin: 12vh 33vw;
+  overflow: hidden;
   vertical-align: top;
   width: 33vw; }
+  .top #brenna #brenna-img {
+    width: 100%; }
 
 section {
-  background-color: #c4c4c4;
   display: inline-block;
-  height: 100%;
-  vertical-align: top;
-  width: 25vw; }
+  vertical-align: top; }
   section div {
+    display: inline-block;
     font-size: 16px;
-    min-height: 100px;
-    margin: 30px; }
+    min-height: 25vh;
+    vertical-align: top;
+    width: 16.7vw; }
     section div h3, section div p {
       display: inline-block;
       margin: 10px; }
     section div h3 {
       font-family: 'Bangers', cursive;
-      font-size: 25px; }
+      font-size: 25px;
+      letter-spacing: 2px; }
     section div img {
-      margin: 12%;
-      width: 75%; }
+      width: 33%; }
+
+.underneath {
+  background-color: #c4c4c4;
+  top: 0;
+  left: 0;
+  width: 100vw; }
+  .underneath div {
+    background-color: rgba(221, 221, 221, 0.59);
+    margin-left: 12.5vw; }
+    .underneath div h3, .underneath div p, .underneath div img {
+      padding: 15px; }
+  .underneath .about {
+    margin-top: 20vh;
+    margin-left: 8.3vw;
+    width: 83.3vw; }
+  .underneath .photos .img-container {
+    background: none;
+    margin: 0;
+    padding: 0; }
+  .underneath .press h3 {
+    width: 100%; }
