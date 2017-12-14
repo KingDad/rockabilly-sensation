@@ -10,78 +10,207 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 1; }
+  z-index: 2; }
   header h1 {
     display: inline-block;
     font-family: 'Bangers', cursive;
     font-size: 50px;
     letter-spacing: 4px;
-    margin: 25px;
+    margin: 25px 0 25px 10vw;
     padding: 0; }
+    header h1 span {
+      display: inline-block;
+      font-size: 25px;
+      margin-left: 30px; }
 
-.song {
+.pink {
+  background-color: pink; }
+
+#song {
   background-color: #AC292B;
   height: 11vh;
   position: absolute;
   right: 0;
   width: 33vw; }
-  .song audio {
+  #song span {
     display: inline-block;
-    margin: 5.5% 40px; }
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 15px 0 0 30px;
+    vertical-align: top; }
+  #song audio {
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    left: 140px; }
 
-.top video {
-  position: absolute;
-  left: 0vw;
-  width: 100vw;
-  z-index: -1; }
-
-.top #brenna {
+#brenna {
   border-radius: 2000px;
   display: inline-block;
   height: 33vw;
-  margin: 12vh 33vw;
   overflow: hidden;
+  position: fixed;
+  top: 20vh;
+  left: 33vw;
   vertical-align: top;
-  width: 33vw; }
-  .top #brenna #brenna-img {
+  width: 33vw;
+  z-index: 3; }
+  #brenna #brenna-img {
     width: 100%; }
 
-section {
+.top {
   display: inline-block;
-  vertical-align: top; }
-  section div {
+  overflow: hidden; }
+  .top video {
+    width: 100vw;
+    z-index: 0; }
+  .top .rain-cover {
+    background-color: rgba(148, 20, 20, 0.2);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; }
+
+section div {
+  display: inline-block;
+  font-size: 16px;
+  min-height: 25vh;
+  vertical-align: top;
+  width: 16.7vw; }
+  section div h3, section div p {
     display: inline-block;
-    font-size: 16px;
-    min-height: 25vh;
-    vertical-align: top;
-    width: 16.7vw; }
-    section div h3, section div p {
-      display: inline-block;
-      margin: 10px; }
-    section div h3 {
-      font-family: 'Bangers', cursive;
-      font-size: 25px;
-      letter-spacing: 2px; }
-    section div img {
-      width: 33%; }
+    margin: 10px; }
+  section div h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+    letter-spacing: 2px; }
+  section div img {
+    width: 33%; }
+
+.transition {
+  position: absolute;
+  top: 98vh;
+  width: 100vw;
+  z-index: 1; }
+  .transition div {
+    display: inline-block;
+    width: 100%; }
+  .transition .transition-top {
+    background: linear-gradient(rgba(222, 41, 43, 0), #de292b);
+    height: 1.5vh; }
+  .transition .transition-middle {
+    background-color: #DE292B;
+    height: 12vh; }
+  .transition .transition-bottom {
+    background: linear-gradient(#de292b, rgba(222, 41, 43, 0));
+    height: 1.5vh; }
 
 .underneath {
-  background-color: #c4c4c4;
-  top: 0;
-  left: 0;
+  background: url(/images/dust_scratches.png) repeat;
   width: 100vw; }
   .underneath div {
-    background-color: rgba(221, 221, 221, 0.59);
-    margin-left: 12.5vw; }
+    background-color: rgba(121, 133, 143, 0.3);
+    margin-top: 30vh; }
     .underneath div h3, .underneath div p, .underneath div img {
       padding: 15px; }
-  .underneath .about {
-    margin-top: 20vh;
-    margin-left: 8.3vw;
-    width: 83.3vw; }
-  .underneath .photos .img-container {
+  .underneath h3 {
+    width: 100%; }
+  .underneath .photos {
+    margin-left: 16.7vw;
+    width: 32vw; }
+  .underneath .press {
+    margin-left: 2vw;
+    width: 32vw; }
+  .underneath .img-container {
     background: none;
     margin: 0;
-    padding: 0; }
-  .underneath .press h3 {
+    padding: 0;
     width: 100%; }
+    .underneath .img-container img {
+      margin: 0 0 30px 11%;
+      padding: 0;
+      vertical-align: top;
+      width: 33%; }
+    .underneath .img-container .horizontal {
+      margin-left: 8.3%;
+      width: 83%; }
+  .underneath .about {
+    margin: 5vh 0 10vh 8.3vw;
+    width: 83.3vw; }
+    .underneath .about h3 {
+      padding: 30px 30px; }
+    .underneath .about p {
+      line-height: 1.5;
+      padding: 0 40px 20px; }
+
+footer {
+  background-color: #AC292B;
+  height: 10vh; }
+  footer .footer-links {
+    display: inline-block;
+    margin: 15px 0 0 66%; }
+    footer .footer-links a {
+      color: #000000;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2vh;
+      text-decoration: none; }
+
+.shrunken {
+  -webkit-animation: PortraitShift 2s forwards;
+  -moz-animation: PortraitShift 2s forwards;
+  -o-animation: PortraitShift 2s forwards;
+  animation: PortraitShift 2s forwards; }
+
+.lightened {
+  -webkit-animation: ColorShift 1s forwards;
+  -moz-animation: ColorShift 1s forwards;
+  -o-animation: ColorShift 1s forwards;
+  animation: ColorShift 1s forwards; }
+
+@-webkit-keyframes PortraitShift {
+  100% {
+    top: 2vh;
+    left: 4vw;
+    height: 64px;
+    width: 64px; } }
+
+@-moz-keyframes PortraitShift {
+  100% {
+    top: 2vh;
+    left: 4vw;
+    height: 64px;
+    width: 64px; } }
+
+@-o-keyframes PortraitShift {
+  100% {
+    top: 2vh;
+    left: 4vw;
+    height: 64px;
+    width: 64px; } }
+
+@keyframes PortraitShift {
+  100% {
+    top: 2vh;
+    left: 4vw;
+    height: 64px;
+    width: 64px; } }
+
+@-webkit-keyframes ColorShift {
+  100% {
+    background-color: #DE292B; } }
+
+@-moz-keyframes ColorShift {
+  100% {
+    background-color: #DE292B; } }
+
+@-o-keyframes ColorShift {
+  100% {
+    background-color: #DE292B; } }
+
+@keyframes ColorShift {
+  100% {
+    background-color: #DE292B; } }

@@ -13,50 +13,78 @@ header{
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	z-index: 1;
+	z-index: 2;
 	h1{
 		display: inline-block;
 		font-family: 'Bangers', cursive;
 		font-size: 50px;
 		letter-spacing: 4px;
-		margin: 25px;
+		margin: 25px 0 25px 10vw;
 		padding: 0;
+		span{
+			display: inline-block;
+			font-size: 25px;
+			margin-left: 30px;
+		}
 		}
 }
-.song{
+.pink{
+	background-color: pink;
+}
+#song{
 	background-color: $darker;
 	height: 11vh;
 	position: absolute;
 	right: 0;
 	width: 33vw;
+	span{
+		display: inline-block;
+		font-family: 'Bangers', cursive;
+		font-size: 25px;
+		letter-spacing: 2px;
+		margin: 15px 0 0 30px;
+		vertical-align: top;
+	}
 	audio{
 		display: inline-block;
-		margin: 5.5% 40px;
+		position: absolute;
+		top: 45px;
+		left: 140px;
+	}
+}
+#brenna{
+	border-radius: 2000px;
+	display: inline-block;
+	height: 33vw;
+	overflow: hidden;
+	position: fixed;
+	top: 20vh;
+	left: 33vw;
+	vertical-align: top;
+	width: 33vw;
+	z-index: 3;
+	#brenna-img{
+		width: 100%;
 	}
 }
 .top{
+	display: inline-block;
+	overflow: hidden;
 	video{
-		position: absolute;
-		left: 0vw;
 		width: 100vw;
-		z-index: -1;
+		z-index: 0;
 	}
-	#brenna{
-		border-radius: 2000px;
-		display: inline-block;
-		height: 33vw;
-		margin: 12vh 33vw;
-		overflow: hidden;
-		vertical-align: top;
-		width: 33vw;
-		#brenna-img{
-			width: 100%;
-		}
+	.rain-cover{
+		background-color: rgba(148, 20, 20, 0.2);
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
 	}
 }
 section{
-	display: inline-block;
-	vertical-align: top;
 	div{
 		display: inline-block;
 		font-size: 16px;
@@ -77,33 +105,153 @@ section{
 		}
 	}
 }
+.transition{
+	position: absolute;
+	top: 98vh;
+	width: 100vw;
+	z-index: 1;
+	div{
+		display: inline-block;
+		width: 100%;
+	}
+	.transition-top{
+		background: linear-gradient(rgba(222, 41, 43, 0), rgb(222, 41, 43));
+		height: 1.5vh;
+	}
+	.transition-middle{
+		background-color: $dark;
+		height: 12vh;
+	}
+	.transition-bottom{
+		background: linear-gradient(rgb(222, 41, 43), rgba(222, 41, 43, 0));
+		height: 1.5vh;
+	}
+}
 .underneath{
-	background-color: $light;
-	top: 0;
-	left: 0;
+	background: url(/images/dust_scratches.png) repeat;
 	width: 100vw;
 	div{
-		background-color: rgba(221, 221, 221, 0.59);
-		margin-left: 12.5vw;
+		background-color: rgba(121, 133, 143, 0.3);
+		margin-top: 30vh;
 		h3, p, img{
 			padding: 15px;
 		}
 	}
-	.about{
-		margin-top: 20vh;
-		margin-left: 8.3vw;
-		width: 83.3vw;
+	h3{
+		width: 100%;
 	}
 	.photos{
-		.img-container{
-			background: none;
-			margin: 0;
-			padding: 0;
-		}
+		margin-left: 16.7vw;
+		width: 32vw;
 	}
 	.press{
-		h3{
-			width: 100%;
+		margin-left: 2vw;
+		width: 32vw;
+	}
+	.img-container{
+		background: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		img{
+			margin: 0 0 30px 11%;
+			padding: 0;
+			vertical-align: top;
+			width: 33%;
 		}
+		.horizontal{
+			margin-left: 8.3%;
+			width: 83%;
+		}
+	}
+	.about{
+		margin: 5vh 0 10vh 8.3vw;
+		width: 83.3vw;
+		h3{
+			padding: 30px 30px;
+		}
+		p{
+			line-height: 1.5;
+			padding: 0 40px 20px;
+		}
+	}
+}
+footer{
+	background-color: $darker;
+	height: 10vh;
+	.footer-links{
+		display: inline-block;
+		margin: 15px 0 0 66%;
+	a{
+		color: #000000;
+		display: inline-block;
+		font-size: 16px;
+		margin: 2vh;
+		text-decoration: none;
+	}
+}
+}
+.shrunken{
+	-webkit-animation: PortraitShift 2s forwards;
+	-moz-animation: PortraitShift 2s forwards;
+	-o-animation: PortraitShift 2s forwards;
+	animation: PortraitShift 2s forwards;
+}
+.lightened{
+	-webkit-animation: ColorShift 1s forwards;
+	-moz-animation: ColorShift 1s forwards;
+	-o-animation: ColorShift 1s forwards;
+	animation: ColorShift 1s forwards;
+}
+@-webkit-keyframes PortraitShift{
+	100% {
+		top: 2vh;
+		left: 4vw;
+		height: 64px;
+		width: 64px;
+	}
+}
+@-moz-keyframes PortraitShift{
+	100% {
+		top: 2vh;
+		left: 4vw;
+		height: 64px;
+		width: 64px;
+	}
+}
+@-o-keyframes PortraitShift{
+	100% {
+		top: 2vh;
+		left: 4vw;
+		height: 64px;
+		width: 64px;
+	}
+}
+@keyframes PortraitShift{
+	100% {
+		top: 2vh;
+		left: 4vw;
+		height: 64px;
+		width: 64px;
+	}
+}
+@-webkit-keyframes ColorShift{
+	100% {
+		background-color: $dark;
+	}
+}
+@-moz-keyframes ColorShift{
+	100% {
+		background-color: $dark;
+	}
+}
+@-o-keyframes ColorShift{
+	100% {
+		background-color: $dark;
+	}
+}
+@keyframes ColorShift{
+	100% {
+		background-color: $dark;
 	}
 }

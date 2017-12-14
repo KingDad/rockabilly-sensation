@@ -1,18 +1,20 @@
 application = function(){
-  var controller = new ScrollMagic.Controller();
   var doc = $(document);
   var height = $(document).height();
-/*  var scrollage = document.body.scrollTop/document.body.;
+  var scrollage = (window.scrollY/height)*100;
   var brenna = document.getElementById("brenna");
   var brennaImg = document.getElementById("brenna-img");
+  var song = document.getElementById("song");
   function triggerAnimation(scroll){
     scroll = scrollage;
-    if scroll ===
-  }*/
+    console.log("Scrolled");
+    if (scroll >= 10){
+      $(brenna).addClass("shrunken");
+      $(song).addClass("lightened");
+    }
+  }
+  triggerAnimation();
   console.log(height);
-  console.log(8);
-  var scene = new ScrollMagic.Scene({
-
-  })
+  console.log(scrollage);
 }
 application();
