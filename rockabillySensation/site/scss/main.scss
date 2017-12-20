@@ -1,6 +1,9 @@
 $light: #c4c4c4;
 $dark: #DE292B;
 $darker: #AC292B;
+*{
+	box-sizing: border-box;
+}
 body{
 	overflow-x: hidden;
 }
@@ -178,24 +181,23 @@ section{
 }
 footer{
 	background-color: $darker;
-	height: 10vh;
-	.footer-links{
-		display: inline-block;
-		margin: 15px 0 0 66%;
+	min-height: 10vh;
 	a{
 		color: #000000;
-		display: inline-block;
+		display: block;
 		font-size: 16px;
-		margin: 2vh;
+		letter-spacing: 0.1em;
+		margin-right: 8.3%;
+		padding: 10px 0;
+		text-align: right;
 		text-decoration: none;
 	}
 }
-}
 .shrunken{
-	-webkit-animation: PortraitShift 2s forwards;
-	-moz-animation: PortraitShift 2s forwards;
-	-o-animation: PortraitShift 2s forwards;
-	animation: PortraitShift 2s forwards;
+	-webkit-animation: PortraitShift 1s forwards;
+	-moz-animation: PortraitShift 1s forwards;
+	-o-animation: PortraitShift 1s forwards;
+	animation: PortraitShift 1s forwards;
 }
 .lightened{
 	-webkit-animation: ColorShift 1s forwards;

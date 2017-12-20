@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   overflow-x: hidden; }
 
@@ -148,22 +151,22 @@ section div {
 
 footer {
   background-color: #AC292B;
-  height: 10vh; }
-  footer .footer-links {
-    display: inline-block;
-    margin: 15px 0 0 66%; }
-    footer .footer-links a {
-      color: #000000;
-      display: inline-block;
-      font-size: 16px;
-      margin: 2vh;
-      text-decoration: none; }
+  min-height: 10vh; }
+  footer a {
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-right: 8.3%;
+    padding: 10px 0;
+    text-align: right;
+    text-decoration: none; }
 
 .shrunken {
-  -webkit-animation: PortraitShift 2s forwards;
-  -moz-animation: PortraitShift 2s forwards;
-  -o-animation: PortraitShift 2s forwards;
-  animation: PortraitShift 2s forwards; }
+  -webkit-animation: PortraitShift 1s forwards;
+  -moz-animation: PortraitShift 1s forwards;
+  -o-animation: PortraitShift 1s forwards;
+  animation: PortraitShift 1s forwards; }
 
 .lightened {
   -webkit-animation: ColorShift 1s forwards;
