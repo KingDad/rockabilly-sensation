@@ -9,7 +9,7 @@ body {
 
 header {
   background-color: #DE292B;
-  height: 11vh;
+  min-height: 11vh;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -31,7 +31,7 @@ header {
 
 #song {
   background-color: #AC292B;
-  height: 11vh;
+  height: 100%;
   position: absolute;
   right: 0;
   width: 33vw; }
@@ -64,17 +64,19 @@ header {
 
 .top {
   display: inline-block;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh; }
   .top video {
-    width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
     z-index: 0; }
   .top .rain-cover {
     background-color: rgba(148, 20, 20, 0.2);
-    height: 100%;
+    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    min-width: 100vw;
     z-index: 1; }
 
 section div {
@@ -84,8 +86,7 @@ section div {
   vertical-align: top;
   width: 16.7vw; }
   section div h3, section div p {
-    display: inline-block;
-    margin: 10px; }
+    display: inline-block; }
   section div h3 {
     font-family: 'Bangers', cursive;
     font-size: 25px;
@@ -95,9 +96,9 @@ section div {
 
 .transition {
   position: absolute;
-  top: 98vh;
-  width: 100vw;
-  z-index: 1; }
+  top: 95%;
+  width: 100%;
+  z-index: 2; }
   .transition div {
     display: inline-block;
     width: 100%; }
@@ -117,8 +118,8 @@ section div {
   .underneath div {
     background-color: rgba(121, 133, 143, 0.3);
     margin-top: 30vh; }
-    .underneath div h3, .underneath div p, .underneath div img {
-      padding: 15px; }
+    .underneath div h3 {
+      padding: 15px 11%; }
   .underneath h3 {
     width: 100%; }
   .underneath .photos {
@@ -138,13 +139,13 @@ section div {
       vertical-align: top;
       width: 33%; }
     .underneath .img-container .horizontal {
-      margin-left: 8.3%;
-      width: 83%; }
+      margin-left: 11%;
+      width: 78%; }
   .underneath .about {
-    margin: 5vh 0 10vh 8.3vw;
-    width: 83.3vw; }
+    margin: 5vh 0 10vh 16.7vw;
+    width: 66vw; }
     .underneath .about h3 {
-      padding: 30px 30px; }
+      padding: 30px 40px; }
     .underneath .about p {
       line-height: 1.5;
       padding: 0 40px 20px; }
