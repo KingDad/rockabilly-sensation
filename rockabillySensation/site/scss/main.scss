@@ -1,260 +1,157 @@
 $light: #c4c4c4;
 $dark: #DE292B;
-$darker: #AC292B;
+$darker: rgb(8, 51, 15);
+$side-margin: 16.7%;
+$small-indent: 20px;
 *{
 	box-sizing: border-box;
 }
 body{
-	overflow-x: hidden;
+  font-size: 0;
 }
 .container{
-	font-size: 0;
+  overflow-x: hidden;
 }
 header{
-	background-color: $dark;
-	min-height: 11vh;
-	position: fixed;
-	top: 0;
-	width: 100vw;
-	z-index: 2;
-	h1{
-		display: inline-block;
-		font-family: 'Bangers', cursive;
-		font-size: 50px;
-		letter-spacing: 4px;
-		margin: 25px 0 25px 10vw;
-		padding: 0;
-		span{
-			display: inline-block;
-			font-size: 25px;
-			margin-left: 30px;
-		}
-		}
-}
-.pink{
-	background-color: pink;
-}
-#song{
-	background-color: $darker;
-	height: 100%;
-	position: absolute;
-	right: 0;
-	width: 33vw;
-	span{
-		display: inline-block;
-		font-family: 'Bangers', cursive;
-		font-size: 25px;
-		letter-spacing: 2px;
-		margin: 15px 0 0 30px;
-		vertical-align: top;
-	}
-	audio{
-		display: inline-block;
-		position: absolute;
-		top: 45px;
-		left: 140px;
-	}
-}
-#brenna{
-	border-radius: 2000px;
-	display: inline-block;
-	height: 33vw;
-	overflow: hidden;
-	position: fixed;
-	top: 20vh;
-	left: 33vw;
-	vertical-align: top;
-	width: 33vw;
-	z-index: 3;
-	#brenna-img{
-		width: 100%;
-	}
-}
-.top{
-	display: inline-block;
-	overflow: hidden;
-	height: 100vh;
-	video{
-		min-width: 100vw;
-		min-height: 100vh;
-		z-index: 0;
-	}
-	.rain-cover{
-		background-color: rgba(148, 20, 20, 0.2);
-		min-height: 100vh;
-		position: absolute;
-		top: 0;
-		left: 0;
-		min-width: 100vw;
-		z-index: 1;
-	}
+  background-color: $darker;
 }
 section{
-	div{
-		display: inline-block;
-		font-size: 16px;
-		min-height: 25vh;
-		vertical-align: top;
-		width: 16.7vw;
-		h3, p{
-			display: inline-block;
-		}
-		h3{
-			font-family: 'Bangers', cursive;
-			font-size: 25px;
-			letter-spacing: 2px;
-		}
-		img{
-			width: 33%;
-		}
-	}
+	overflow: hidden;
 }
-.transition{
-	position: absolute;
-	top: 95%;
-	width: 100%;
-	z-index: 2;
-	div{
-		display: inline-block;
-		width: 100%;
-	}
-	.transition-top{
-		background: linear-gradient(rgba(222, 41, 43, 0), rgb(222, 41, 43));
-		height: 1.5vh;
-	}
-	.transition-middle{
-		background-color: $dark;
-		height: 12vh;
-	}
-	.transition-bottom{
-		background: linear-gradient(rgb(222, 41, 43), rgba(222, 41, 43, 0));
-		height: 1.5vh;
-	}
+.top{
+	background-color: rgba(215, 44, 44, 0);
+}
+#song{
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+}
+nav{
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  width: 33%;
 }
 .underneath{
 	background: url(/images/dust_scratches.png) repeat;
-	width: 100vw;
-	div{
-		background-color: rgba(121, 133, 143, 0.3);
-		margin-top: 30vh;
-		h3{
-			padding: 15px 11%;
-		}
-	}
-	h3{
-		width: 100%;
-	}
-	.photos{
-		margin-left: 16.7vw;
-		width: 32vw;
-	}
-	.press{
-		margin-left: 2vw;
-		width: 32vw;
-	}
-	.img-container{
-		background: none;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-		img{
-			margin: 0 0 30px 11%;
-			padding: 0;
-			vertical-align: top;
-			width: 33%;
-		}
-		.horizontal{
-			margin-left: 11%;
-			width: 78%;
-		}
-	}
-	.about{
-		margin: 5vh 0 10vh 16.7vw;
-		width: 66vw;
-		h3{
-			padding: 30px 40px;
-		}
-		p{
-			line-height: 1.5;
-			padding: 0 40px 20px;
-		}
-	}
+	z-index: 1;
 }
 footer{
+  background-color: $darker;
+}
+h1{
+	color: #FFFBFA;
+  display: inline-block;
+  font-family: 'Marcellus SC', cursive;
+  font-size: 45px;
+  margin: 0;
+  padding: 30px 30px 30px 60px;
+  width: 33%;
+}
+h3{
+	font-size: 30px;
+  margin: 0;
+	padding: 40px 40px 0;
+}
+p{
+  margin: 0;
+}
+nav>a{
+  color: #FFFBFA;
+  display: inline-block;
+  font-size: 30px;
+  padding: 45px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 33%;
+}
+nav>a:hover{
+  text-decoration: underline;
+}
+span{
+  font-size: 30px;
+}
+strong{
+	color: #FFFBFA;
+}
+#song>span{
+  display: inline-block;
+  padding: 45px 0;
+}
+#brenna{
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  height: 18vw;
+	margin: 12vh auto;
+  position: relative;
+  overflow: hidden;
+  width: 25vw;
+	z-index: 0;
+}
+#brenna-img{
+  width: 100%;
+}
+video{
+	position: fixed;
+	top: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	z-index: -10;
+}
+main{
+	z-index: 1;
+}
+p{
+	padding: 40px 16.7%;
+	font-size: 15px;
+}
+.about{
+	margin: 0 16.7%;
+	width: 66%
+}
+.about>p{
+	display: inline-block;
+	margin: 30px 0 70px;
+	padding: 0;
+	text-align: justify;
+	vertical-align: top;
+	width: calc(33% - 15px);
+}
+.about>p:nth-child(1n + 3){
+	margin-left: 22.5px;
+}
+.transition{
+	background: $darker;
+	height: 100px;
+}
+.transition-middle{
 	background-color: $darker;
-	min-height: 10vh;
-	a{
-		color: #000000;
-		display: block;
-		font-size: 16px;
-		letter-spacing: 0.1em;
-		margin-right: 8.3%;
-		padding: 10px 0;
-		text-align: right;
-		text-decoration: none;
-	}
+	display: inline-block;
+	height: 15%;
 }
-.shrunken{
-	-webkit-animation: PortraitShift 1s forwards;
-	-moz-animation: PortraitShift 1s forwards;
-	-o-animation: PortraitShift 1s forwards;
-	animation: PortraitShift 1s forwards;
+.transition-bottom{
+background-color: rgba($darker, 0.4);
 }
-.lightened{
-	-webkit-animation: ColorShift 1s forwards;
-	-moz-animation: ColorShift 1s forwards;
-	-o-animation: ColorShift 1s forwards;
-	animation: ColorShift 1s forwards;
+.images{
+	margin-left: 16.7%;
 }
-@-webkit-keyframes PortraitShift{
-	100% {
-		top: 2vh;
-		left: 4vw;
-		height: 64px;
-		width: 64px;
-	}
+.images>div>img{
+	margin: 20px 0 40px;
+	vertical-align: top;
+	width: 20%;
 }
-@-moz-keyframes PortraitShift{
-	100% {
-		top: 2vh;
-		left: 4vw;
-		height: 64px;
-		width: 64px;
-	}
+.images>div>img:nth-child(1n + 2){
+margin-left: 10%;
 }
-@-o-keyframes PortraitShift{
-	100% {
-		top: 2vh;
-		left: 4vw;
-		height: 64px;
-		width: 64px;
-	}
+.footer-links{
+	display: inline-block;
+	margin: 30px 16.7%;
+	width: 25%;
 }
-@keyframes PortraitShift{
-	100% {
-		top: 2vh;
-		left: 4vw;
-		height: 64px;
-		width: 64px;
-	}
-}
-@-webkit-keyframes ColorShift{
-	100% {
-		background-color: $dark;
-	}
-}
-@-moz-keyframes ColorShift{
-	100% {
-		background-color: $dark;
-	}
-}
-@-o-keyframes ColorShift{
-	100% {
-		background-color: $dark;
-	}
-}
-@keyframes ColorShift{
-	100% {
-		background-color: $dark;
-	}
+li>a{
+	color: #FFFBFA;
+	display: inline-block;
+	font-size: 15px;
+	list-style-type: none;
+	margin-left: -40px;
+	padding: 5px 0;
 }
